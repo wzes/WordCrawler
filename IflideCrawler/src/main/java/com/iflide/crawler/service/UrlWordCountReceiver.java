@@ -25,7 +25,7 @@ public class UrlWordCountReceiver {
     @RabbitHandler
     public void process(Url url) {
         logger.info("Receiver  : " + url.getName());
-        cleanerService.handleFilter(url);
+        cleanerService.handle(url);
     }
 
 }

@@ -1,5 +1,6 @@
-package com.iflide.crawler.component;
+package com.iflide.crawler.service;
 
+import com.iflide.crawler.component.RedisConsts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
@@ -12,7 +13,7 @@ import java.util.Map;
  * @date on 8/28/18
  */
 @Component
-public class RedisService {
+public class UrlPoolService {
 
     @Autowired
     RedisTemplate<String, String> redisTemplate;

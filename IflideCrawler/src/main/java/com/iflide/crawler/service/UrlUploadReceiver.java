@@ -1,8 +1,5 @@
 package com.iflide.crawler.service;
 
-import com.iflide.crawler.component.BloomFilter;
-import com.iflide.crawler.component.RedisConsts;
-import com.iflide.crawler.component.RedisService;
 import com.iflide.crawler.config.RabbitConfig;
 import com.iflide.crawler.model.Url;
 import org.slf4j.Logger;
@@ -12,8 +9,6 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 
 /**

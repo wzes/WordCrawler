@@ -2,7 +2,6 @@ package com.iflide.crawler.service;
 
 import com.iflide.crawler.component.BloomFilter;
 import com.iflide.crawler.component.RedisConsts;
-import com.iflide.crawler.component.RedisService;
 import com.iflide.crawler.model.Url;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +22,7 @@ public class CleanerService {
     BloomFilter<String> bloomFilter;
 
     @Autowired
-    RedisService redisService;
+    UrlPoolService urlPoolService;
 
     private HashMap<String, Integer> urlTypeMap = new HashMap<>();
     private HashMap<String, List<Url>> urlInfoMap = new HashMap<>();
@@ -45,13 +44,13 @@ public class CleanerService {
             }
             // not exist in crawler queue
             else if (!bloomFilter.contains(RedisConsts.CRAWLER_BLOOMFILTER, url.getName())) {
-                redisService.addUrl(url.getName());
+                urlPoolService.addUrl(url.getName());
                 logger.info("Add url: " + url.getName());
             }
         }
     }
 
-    public void handleFilter(Url url) {
+    public void handle(Url url) {
         String urlType = UrlHelper.getUrlType(url.getName());
         // calculate url type and filter
         if (urlTypeMap.containsKey(urlType)) {

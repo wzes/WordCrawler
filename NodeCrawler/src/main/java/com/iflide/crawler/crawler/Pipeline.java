@@ -23,5 +23,5 @@ public abstract class Pipeline {
      * @param url url
      * @param content page content
      */
-    protected abstract void save(String url, String content);
+    protected abstract void save(Url url);
 }

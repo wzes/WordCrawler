@@ -23,7 +23,7 @@ public class UrlHelper {
 
     public static String getUrlType(String url) {
         if (url == null || url.length() == 0) {
-            throw new IllegalArgumentException("Illegal Argument Exception");
+            return null;
         }
         int index = url.lastIndexOf('/');
         // http:// or https://

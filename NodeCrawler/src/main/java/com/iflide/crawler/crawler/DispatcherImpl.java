@@ -18,14 +18,47 @@ import org.springframework.web.client.RestTemplate;
 public class DispatcherImpl implements Dispatcher {
     private Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
     private final RestTemplate client = new RestTemplate();
-
+    private static final Long EXPIRES_MILLISECOND = 1000L;
     @Value("${iflide.url.address}")
     private String url;
 
-    @Override
-    public String getUrl() {
+    @Autowired
+    Downloader downloader;
+
+    private volatile boolean flag = true;
+
+    /**
+     * <p>Get url from service</p>
+     *
+     * @return
+     */
+    private String getUrl() {
         String response = client.exchange(url, HttpMethod.GET, HttpEntity.EMPTY, String.class).toString();
         logger.info("Get url: " + response);
         return "null".equals(response) ? null : response;
+    }
+
+    @Override
+    public void run() {
+//        flag = true;
+//        while (flag) {
+//            // sync
+//            String url = getUrl();
+//            if (url != null) {
+//                // async
+//                downloader.handle(url);
+//            } else {
+//                // wait some seconds
+//                try {
+//                    Thread.sleep(EXPIRES_MILLISECOND);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }
+    }
+
+    public void stop() {
+        flag = false;
     }
 }

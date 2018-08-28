@@ -5,10 +5,10 @@ package com.iflide.crawler.crawler;
  * @date on 8/28/18
  */
 public interface Dispatcher {
+
     /**
-     * <p>Get url from service</p>
+     * <p></p>
      *
-     * @return
      */
-    String getUrl();
+    void run();
 }

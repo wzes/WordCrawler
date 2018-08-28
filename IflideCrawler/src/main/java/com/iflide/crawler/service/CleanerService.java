@@ -39,6 +39,9 @@ public class CleanerService {
     public void handle(List<Url> urls) {
         for (Url url : urls) {
             String urlType = UrlHelper.getUrlType(url.getName());
+            if (urlType == null) {
+                continue;
+            }
             if (bloomFilter.contains(RedisConsts.FILTER_BLOOMFILTER, urlType)) {
                 logger.info("Filter url with url type: " + url.getName());
             }

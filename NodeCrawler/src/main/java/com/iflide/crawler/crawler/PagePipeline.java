@@ -37,16 +37,15 @@ public class PagePipeline extends Pipeline {
 
     /**
      * @param url     url
-     * @param content page content
      */
     @Override
-    public void save(String url, String content) {
+    public void save(Url url) {
         // send url info to service center
-        crawlerSender.send(new Url(url, content.length()));
+        crawlerSender.send(new Url(url.getName(), url.getWordCount()));
         logger.info("Send url: " + url);
 
         //
-        String domainName = UrlHelper.getDomainName(url);
+        String domainName = UrlHelper.getDomainName(url.getName());
         File file = new File(DIR_NAME + domainName);
         if (!file.exists() && !file.mkdirs()) {
             logger.error("file cannot create");
@@ -54,7 +53,7 @@ public class PagePipeline extends Pipeline {
         }
         String filename = DIR_NAME + domainName + "/" + url.hashCode() + ".txt";
         try (FileWriter writer = new FileWriter(new File(filename))) {
-            writer.write(content);
+            writer.write(url.getContent());
         } catch (IOException e) {
             e.printStackTrace();
         }

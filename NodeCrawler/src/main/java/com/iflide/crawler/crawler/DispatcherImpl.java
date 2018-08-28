@@ -33,29 +33,30 @@ public class DispatcherImpl implements Dispatcher {
      * @return
      */
     private String getUrl() {
-        String response = client.exchange(url, HttpMethod.GET, HttpEntity.EMPTY, String.class).toString();
+        String response = client.exchange(url, HttpMethod.GET, HttpEntity.EMPTY, String.class).getBody();
         logger.info("Get url: " + response);
         return "null".equals(response) ? null : response;
     }
 
     @Override
     public void run() {
-//        flag = true;
-//        while (flag) {
-//            // sync
-//            String url = getUrl();
-//            if (url != null) {
-//                // async
-//                downloader.handle(url);
-//            } else {
-//                // wait some seconds
-//                try {
-//                    Thread.sleep(EXPIRES_MILLISECOND);
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
+        flag = true;
+        logger.info("Run: ");
+        while (flag) {
+            // sync
+            String url = getUrl();
+            if (url != null) {
+                // async
+                downloader.handle(url);
+            } else {
+                // wait some seconds
+                try {
+                    Thread.sleep(EXPIRES_MILLISECOND);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     public void stop() {

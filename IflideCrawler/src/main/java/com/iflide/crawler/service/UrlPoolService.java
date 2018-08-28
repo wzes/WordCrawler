@@ -1,6 +1,8 @@
 package com.iflide.crawler.service;
 
 import com.iflide.crawler.component.RedisConsts;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
@@ -14,12 +16,16 @@ import java.util.Map;
  */
 @Component
 public class UrlPoolService {
-
+    private Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
     @Autowired
     RedisTemplate<String, String> redisTemplate;
 
-    private Map<Integer, Integer> queueInfoMap = new HashMap<>();
+    private Map<Integer, Long> queueInfoMap;
 
+    private boolean init = true;
+
+    public UrlPoolService() {
+    }
 
     /**
      * <p>Add url to queue</p>
@@ -28,7 +34,7 @@ public class UrlPoolService {
      */
     public void addUrl(String url) {
         // Get the queue with the least number of elements and push
-        int minCount = Integer.MAX_VALUE;
+        Long minCount = Long.MAX_VALUE;
         int desIndex = 0;
         for (int i = 0; i < RedisConsts.CRAWLER_QUEUES.length; i++) {
             if (queueInfoMap.containsKey(i)) {
@@ -38,7 +44,7 @@ public class UrlPoolService {
                 }
             } else {
                 desIndex = i;
-                minCount = 0;
+                minCount = 0L;
                 break;
             }
         }
@@ -52,16 +58,29 @@ public class UrlPoolService {
      * @return url
      */
     public String popUrl() {
+        if (init) {
+            queueInfoMap = new HashMap<>();
+            for (int i = 0; i < RedisConsts.CRAWLER_QUEUES.length; i++) {
+                Long size = redisTemplate.opsForList().size(RedisConsts.CRAWLER_QUEUES[i]);
+                queueInfoMap.put(i, size);
+                logger.info("Queue: " + size);
+            }
+            init = false;
+        }
         // Get the queue with a most number of elements and pop
-        int maximum = 0, maxIndex = 0;
-        for (Map.Entry<Integer, Integer> entry : queueInfoMap.entrySet()) {
+        Long maximum = 0L;
+        int maxIndex = 0;
+        for (Map.Entry<Integer, Long> entry : queueInfoMap.entrySet()) {
             if (entry.getValue() > maximum) {
                 maximum = entry.getValue();
                 maxIndex = entry.getKey();
             }
         }
         if (maximum != 0) {
-            return pop(RedisConsts.CRAWLER_QUEUES[maxIndex]);
+            queueInfoMap.put(maxIndex, maximum - 1);
+            String url = pop(RedisConsts.CRAWLER_QUEUES[maxIndex]);
+            logger.info("Pop: " + maximum + " " + maxIndex + " " + url);
+            return url;
         }
         return null;
     }

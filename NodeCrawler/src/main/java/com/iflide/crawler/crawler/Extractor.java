@@ -21,7 +21,14 @@ import java.util.List;
 public class Extractor {
 
 
-    public List<Url> getAllLinks(String url, Document doc) {
+    /**
+     * <p>Get all links from html document</p>
+     *
+     * @param url
+     * @param doc
+     * @return url List
+     */
+    private List<Url> getAllLinks(String url, Document doc) {
         List<Url> urls = new ArrayList<>();
         Elements links = doc.select("a[href]");
         for (Element link : links) {
@@ -30,29 +37,18 @@ public class Extractor {
         return urls;
     }
 
-    public Url getAllText(String url, Document doc) {
-        Elements ps = doc.getElementsByTag("p");
-        StringBuilder sb = new StringBuilder();
-        for (Element p : ps) {
-            sb.append(p.text().trim());
-        }
-        String content = sb.toString();
-        return new Url(url, content, content.length());
-    }
-
-    public List<Url> getAllLinks(String url, String html) {
+    List<Url> getAllLinks(String url, String html) {
         return getAllLinks(url, Jsoup.parse(html));
     }
 
-    public Url getText(String url, String content) {
-//        StringBuilder sb = new StringBuilder();
-//        char[] contents = content.toCharArray();
-//        for (char ch : contents) {
-//            if (ch != '\n' && ch != '\t') {
-//                sb.append(ch);
-//            }
-//        }
-//        String res = sb.toString();
+    /**
+     * <p>Get content</p>
+     *
+     * @param url
+     * @param content
+     * @return
+     */
+    Url getText(String url, String content) {
         return new Url(url, content);
     }
 }

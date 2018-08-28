@@ -32,6 +32,7 @@ public class UrlController {
     public String getUrl(@RequestHeader(name = "Host") String host) {
         String url = urlPoolService.popUrl();
         int followUp = 1;
+
         while (url != null) {
             String timestampKey = UrlHelper.getDomainName(url) + host;
             String timestamp = redisTemplate.opsForValue().get(timestampKey);

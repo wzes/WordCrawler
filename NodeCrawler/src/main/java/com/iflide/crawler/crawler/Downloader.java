@@ -26,17 +26,26 @@ public class Downloader {
     PagePipeline pagePipeline;
 
     public void handle(final String url) {
-        GlobalTask.INSTANCE.mDefaultPool.execute(() -> {
-            try {
-                HtmlPage page = getHtmlUnitSpider().getPage(url);
-                pagePipeline.save(extractor.getAllLinks(url, page.asXml()));
-                pagePipeline.save(extractor.getText(url, page.asText()));
-                logger.info("Crawler: " + url);
-            } catch (IOException e) {
-                e.printStackTrace();
-                logger.error("Error: " + e.getMessage());
-            }
-        });
+        try {
+            logger.info("Get url: " + url);
+            HtmlPage page = getHtmlUnitSpider().getPage(url);
+            pagePipeline.save(extractor.getAllLinks(url, page.asXml()));
+            pagePipeline.save(extractor.getText(url, page.asText()));
+            logger.info("Crawler: " + url);
+        } catch (IOException e) {
+            logger.error("Error: " + e.getMessage());
+        }
+//        GlobalTask.INSTANCE.mDefaultPool.execute(() -> {
+//            try {
+//                HtmlPage page = getHtmlUnitSpider().getPage(url);
+//                pagePipeline.save(extractor.getAllLinks(url, page.asXml()));
+//                pagePipeline.save(extractor.getText(url, page.asText()));
+//                logger.info("Crawler: " + url);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//                logger.error("Error: " + e.getMessage());
+//            }
+//        });
     }
 
     private WebClient getHtmlUnitSpider() {

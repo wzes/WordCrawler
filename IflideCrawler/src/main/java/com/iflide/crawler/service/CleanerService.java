@@ -32,49 +32,54 @@ public class CleanerService {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
 
-    public void handle (List<Url> urls) {
+    /**
+     * <p>Handle undo urls</p>
+     *
+     * @param urls
+     */
+    public void handle(List<Url> urls) {
         for (Url url : urls) {
             String urlType = UrlHelper.getUrlType(url.getName());
             if (bloomFilter.contains(RedisConsts.FILTER_BLOOMFILTER, urlType)) {
                 logger.info("Filter url with url type: " + url.getName());
-                continue;
             }
             // not exist in crawler queue
-            // or exist go queue
-            if (!bloomFilter.contains(RedisConsts.CRAWLER_BLOOMFILTER, url.getName()) ||
-                    bloomFilter.contains(RedisConsts.GO_BLOOMFILTER, urlType)) {
+            else if (!bloomFilter.contains(RedisConsts.CRAWLER_BLOOMFILTER, url.getName())) {
                 redisService.addUrl(url.getName());
                 logger.info("Add url: " + url.getName());
-            } else {
-                // calculate url type and filter
-                if (urlTypeMap.containsKey(urlType)) {
-                    Integer num = urlTypeMap.get(urlType);
-                    if (num > FILTER_URL_NUM_THRESHOLD) {
-                        boolean filter = false;
-                        for (Url urlTmp : urlInfoMap.get(urlType)) {
-                            if (urlTmp.getWordCount() < FILTER_WORD_COUNT_THRESHOLD) {
-                                filter = true;
-                                break;
-                            }
-                        }
-                        if (filter) {
-                            bloomFilter.add(RedisConsts.FILTER_BLOOMFILTER, urlType);
-                            logger.info("Add filter url with url type: " + urlType);
-                        } else {
-                            bloomFilter.add(RedisConsts.GO_BLOOMFILTER, urlType);
-                            logger.info("Add go url with url type: " + urlType);
-                        }
-                    } else {
-                        urlTypeMap.put(urlType, num + 1);
-                        urlInfoMap.get(urlType).add(url);
-                        logger.info("Handle url type: " + urlType);
-                    }
-                } else {
-                    urlTypeMap.put(urlType, 1);
-                    urlInfoMap.put(urlType, Arrays.asList(url));
-                    logger.info("Handle url type with new url type: " + urlType);
-                }
             }
+        }
+    }
+
+    public void handleFilter(Url url) {
+        String urlType = UrlHelper.getUrlType(url.getName());
+        // calculate url type and filter
+        if (urlTypeMap.containsKey(urlType)) {
+            Integer num = urlTypeMap.get(urlType);
+            if (num > FILTER_URL_NUM_THRESHOLD) {
+                boolean filter = false;
+                for (Url urlTmp : urlInfoMap.get(urlType)) {
+                    if (urlTmp.getWordCount() < FILTER_WORD_COUNT_THRESHOLD) {
+                        filter = true;
+                        break;
+                    }
+                }
+                if (filter) {
+                    bloomFilter.add(RedisConsts.FILTER_BLOOMFILTER, urlType);
+                    logger.info("Add filter url with url type: " + urlType);
+                } else {
+                    bloomFilter.add(RedisConsts.GO_BLOOMFILTER, urlType);
+                    logger.info("Add go url with url type: " + urlType);
+                }
+            } else {
+                urlTypeMap.put(urlType, num + 1);
+                urlInfoMap.get(urlType).add(url);
+                logger.info("Handle url type: " + urlType);
+            }
+        } else {
+            urlTypeMap.put(urlType, 1);
+            urlInfoMap.put(urlType, Arrays.asList(url));
+            logger.info("Handle url type with new url type: " + urlType);
         }
     }
 }

@@ -23,12 +23,12 @@ public class BloomFilterTest {
     BloomFilter<String> bloomFilter;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         bloomFilter.add(RedisConsts.CRAWLER_BLOOMFILTER, "https://www.jianshu.com/p/9f6bab6bfdb5");
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     }
 
     @Test

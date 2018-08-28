@@ -54,6 +54,6 @@ public class UrlController {
                 url = urlPoolService.popUrl();
             }
         }
-        return "the url pool is empty!";
+        return "null";
     }
 }

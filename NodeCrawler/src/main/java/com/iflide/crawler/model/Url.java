@@ -10,6 +10,10 @@ public class Url implements Serializable {
     private String name;
     private int wordCount;
 
+    public Url(String name) {
+        this.name = name;
+    }
+
     public Url(String name, int wordCount) {
         this.name = name;
         this.wordCount = wordCount;

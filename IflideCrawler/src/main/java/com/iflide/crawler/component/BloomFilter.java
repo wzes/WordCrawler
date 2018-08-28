@@ -84,8 +84,8 @@ public class BloomFilter<E> {
      *
      * @param element is an element to register in the Bloom filter.
      */
-    public void add(E element) {
-        add(element.toString().getBytes(charset));
+    public void add(String key, E element) {
+        add(key, element.toString().getBytes(charset));
     }
 
     /**
@@ -93,15 +93,11 @@ public class BloomFilter<E> {
      *
      * @param bytes array of bytes to add to the Bloom filter.
      */
-    public void add(byte[] bytes) {
-        if (redisTemplate.opsForValue().get(RedisConsts.CRAWLER_BLOOMFILTER) == null) {
-            redisTemplate.opsForValue().setBit(RedisConsts.CRAWLER_BLOOMFILTER, 0, false);
-            redisTemplate.expire(RedisConsts.CRAWLER_BLOOMFILTER, expireDays, TimeUnit.DAYS);
-        }
-
+    public void add(String key, byte[] bytes) {
+        redisTemplate.opsForValue().get(key);
         int[] hashes = createHashes(bytes, numberOfHashFunctions);
         for (int hash : hashes) {
-            redisTemplate.opsForValue().setBit(RedisConsts.CRAWLER_BLOOMFILTER, Math.abs(hash % sizeOfBloomFilter), true);
+            redisTemplate.opsForValue().setBit(key, Math.abs(hash % sizeOfBloomFilter), true);
         }
     }
 
@@ -110,9 +106,9 @@ public class BloomFilter<E> {
      *
      * @param c Collection of elements.
      */
-    public void addAll(Collection<? extends E> c) {
+    public void addAll(String key, Collection<? extends E> c) {
         for (E element : c) {
-            add(element);
+            add(key, element);
         }
     }
 
@@ -124,8 +120,8 @@ public class BloomFilter<E> {
      * @param element element to check.
      * @return true if the element could have been inserted into the Bloom filter.
      */
-    public boolean contains(E element) {
-        return contains(element.toString().getBytes(charset));
+    public boolean contains(String key, E element) {
+        return contains(key, element.toString().getBytes(charset));
     }
 
     /**
@@ -136,10 +132,10 @@ public class BloomFilter<E> {
      * @param bytes array of bytes to check.
      * @return true if the array could have been inserted into the Bloom filter.
      */
-    public boolean contains(byte[] bytes) {
+    public boolean contains(String key, byte[] bytes) {
         int[] hashes = createHashes(bytes, numberOfHashFunctions);
         for (int hash : hashes) {
-            if (!redisTemplate.opsForValue().getBit(RedisConsts.CRAWLER_BLOOMFILTER, Math.abs(hash % sizeOfBloomFilter))) {
+            if (!redisTemplate.opsForValue().getBit(key, Math.abs(hash % sizeOfBloomFilter))) {
                 return false;
             }
         }
@@ -154,9 +150,9 @@ public class BloomFilter<E> {
      * @param c elements to check.
      * @return true if all the elements in c could have been inserted into the Bloom filter.
      */
-    public boolean containsAll(Collection<? extends E> c) {
+    public boolean containsAll(String key, Collection<? extends E> c) {
         for (E element : c) {
-            if (!contains(element)) {
+            if (!contains(key, element)) {
                 return false;
             }
         }
@@ -249,11 +245,5 @@ public class BloomFilter<E> {
         hash = 61 * hash + this.expectedNumberOfFilterElements;
         hash = 61 * hash + this.numberOfHashFunctions;
         return hash;
-    }
-
-    public static void main(String[] args) {
-        BloomFilter<String> bloomFilter = new BloomFilter<>(0.0001, 600000);
-        System.out.println(bloomFilter.getSizeOfBloomFilter());
-        System.out.println(bloomFilter.getNumberOfHashFunctions());
     }
 }

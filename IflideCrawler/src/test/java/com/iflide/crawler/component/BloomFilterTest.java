@@ -24,7 +24,7 @@ public class BloomFilterTest {
 
     @Before
     public void setUp() throws Exception {
-        bloomFilter.add("https://www.jianshu.com/p/9f6bab6bfdb5");
+        bloomFilter.add(RedisConsts.CRAWLER_BLOOMFILTER, "https://www.jianshu.com/p/9f6bab6bfdb5");
     }
 
     @After
@@ -33,7 +33,7 @@ public class BloomFilterTest {
 
     @Test
     public void add() {
-        bloomFilter.add("https://www.jianshu.com/p/9f6bab6bfdb5");
+        bloomFilter.add(RedisConsts.CRAWLER_BLOOMFILTER, "https://www.jianshu.com/p/9f6bab6bfdb5");
     }
 
     @Test
@@ -42,9 +42,9 @@ public class BloomFilterTest {
 
     @Test
     public void contains() {
-        Assert.assertTrue(bloomFilter.contains("https://www.jianshu.com/p/9f6bab6bfdb5"));
+        Assert.assertTrue(bloomFilter.contains(RedisConsts.CRAWLER_BLOOMFILTER, "https://www.jianshu.com/p/9f6bab6bfdb5"));
 
-        Assert.assertFalse(bloomFilter.contains("https://www.jianshu.com/p"));
+        Assert.assertFalse(bloomFilter.contains(RedisConsts.CRAWLER_BLOOMFILTER, "https://www.jianshu.com/p"));
     }
 
     @Test

@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-@RabbitListener(queues = RabbitConfig.QUEUE_NAME)
-public class ClawlerReceiver {
+@RabbitListener(queues = RabbitConfig.QUEUE_PAGE_INFO_NAME)
+public class UrlWordCountReceiver {
 
     @RabbitHandler
     public void process(Url url) {

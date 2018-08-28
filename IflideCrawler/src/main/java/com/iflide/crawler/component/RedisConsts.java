@@ -7,6 +7,20 @@ package com.iflide.crawler.component;
 public class RedisConsts {
 
     /**
+     * <p>queue names</p>
+     *
+     */
+    public static final String[] CRAWLER_QUEUES = new String[]{ "CRAWLER_QUEUE_1",
+                                                                "CRAWLER_QUEUE_2",
+                                                                "CRAWLER_QUEUE_3",
+                                                                "CRAWLER_QUEUE_4",
+                                                                "CRAWLER_QUEUE_5",
+                                                                "CRAWLER_QUEUE_6",
+                                                                "CRAWLER_QUEUE_7",
+                                                                "CRAWLER_QUEUE_8",
+                                                                "CRAWLER_QUEUE_9" };
+
+    /**
      * <p>Url filter key</p>
      *
      */

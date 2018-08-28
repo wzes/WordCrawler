@@ -33,11 +33,12 @@ public class UrlController {
         String url = urlPoolService.popUrl();
         int followUp = 1;
 
+        logger.info("Host: " + host);
         while (url != null) {
             String timestampKey = UrlHelper.getDomainName(url) + host;
             String timestamp = redisTemplate.opsForValue().get(timestampKey);
-            logger.debug(timestamp);
-            if (timestamp == null || timestamp.length() == 0 || Long.parseLong(timestamp) > System.currentTimeMillis()) {
+            logger.info(timestamp);
+            if (timestamp.length() == 0 || Long.parseLong(timestamp) < System.currentTimeMillis()) {
                 redisTemplate.opsForValue().set(timestampKey,
                         String.valueOf(System.currentTimeMillis() + EXPIRES_MILLISECOND));
                 logger.info("Pop url: " + url);
@@ -46,10 +47,12 @@ public class UrlController {
                 try {
                     Thread.sleep(EXPIRES_MILLISECOND);
                     url = urlPoolService.popUrl();
+                    followUp = 0;
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             } else {
+                logger.info("followUp: " + followUp);
                 followUp++;
                 urlPoolService.addUrl(url);
                 url = urlPoolService.popUrl();

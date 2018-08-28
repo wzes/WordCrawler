@@ -35,7 +35,8 @@ public class UrlController {
         while (url != null) {
             String timestampKey = UrlHelper.getDomainName(url) + host;
             String timestamp = redisTemplate.opsForValue().get(timestampKey);
-            if (timestamp.length() == 0 && Long.parseLong(timestamp) > System.currentTimeMillis()) {
+            logger.debug(timestamp);
+            if (timestamp == null || timestamp.length() == 0 || Long.parseLong(timestamp) > System.currentTimeMillis()) {
                 redisTemplate.opsForValue().set(timestampKey,
                         String.valueOf(System.currentTimeMillis() + EXPIRES_MILLISECOND));
                 logger.info("Pop url: " + url);

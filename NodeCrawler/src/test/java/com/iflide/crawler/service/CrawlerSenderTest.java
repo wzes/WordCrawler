@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 /**
@@ -32,6 +34,6 @@ public class CrawlerSenderTest {
 
     @Test
     public void send() {
-        crawlerSender.send(new Url("http://www.baidu.com", 1221));
+        crawlerSender.send(Arrays.asList(new Url("http://www.baidu.com", 1221)));
     }
 }

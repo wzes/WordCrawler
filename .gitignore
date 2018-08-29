@@ -2,3 +2,5 @@
 .idea/vcs.xml
 IflideCrawler/src/main/resources/static/
 IflideCrawler/src/main/resources/templates/
+NodeCrawler/data/
+data/

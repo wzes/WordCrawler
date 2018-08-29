@@ -34,7 +34,7 @@ public class DispatcherImpl implements Dispatcher {
      * <p>A threshold for performing tasks at the same time.</p>
      *
      */
-    private static final Long DOWN_LOAD_THRESHOLD = 5L;
+    private static final Long DOWN_LOAD_THRESHOLD = 10L;
 
     /**
      * <p>Use locks to ensure that the number of tasks is within a certain range.</p>
@@ -91,6 +91,15 @@ public class DispatcherImpl implements Dispatcher {
                     atomicLong.incrementAndGet();
                     // add task into threads pool
                     // async
+//                    mDefaultPool.execute(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            // async
+//                            downloader.handle(url);
+//                            // finish
+//                            atomicLong.decrementAndGet();
+//                        }
+//                    });
                     new Thread(new Runnable() {
                         @Override
                         public void run() {

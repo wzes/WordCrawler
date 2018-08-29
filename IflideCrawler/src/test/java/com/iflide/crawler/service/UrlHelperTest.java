@@ -33,7 +33,7 @@ public class UrlHelperTest {
                 UrlHelper.getUrlType("https://blog.csdn.net"));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void getUrlTypeException() {
         UrlHelper.getUrlType("");
     }

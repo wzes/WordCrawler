@@ -5,7 +5,7 @@
 
     <groupId>com.iflide</groupId>
     <artifactId>crawler</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1-service</version>
     <packaging>jar</packaging>
 
     <name>masterCrawler</name>
@@ -49,19 +49,9 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>2.0.1.RELEASE</version>
         </dependency>
     </dependencies>
 
@@ -85,6 +75,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>

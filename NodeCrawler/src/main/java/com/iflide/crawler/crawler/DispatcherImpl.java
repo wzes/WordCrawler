@@ -40,8 +40,6 @@ public class DispatcherImpl implements Dispatcher {
      * <p>Use locks to ensure that the number of tasks is within a certain range.</p>
      *
      */
-    private ReentrantLock mGetLock = new ReentrantLock();
-    private Condition mGetCondition = mGetLock.newCondition();
     private AtomicLong atomicLong = new AtomicLong();
     /**
      * <p>Get the service address of URL</p>
@@ -56,7 +54,7 @@ public class DispatcherImpl implements Dispatcher {
     private volatile boolean flag = true;
     private int corePoolSize = Runtime.getRuntime().availableProcessors() == 0 ? 3 : Runtime.getRuntime().availableProcessors();
     private AtomicInteger atomicInteger = new AtomicInteger();
-    private ThreadFactory mFactory = r -> new Thread("Crawler thread - " + atomicInteger.getAndIncrement());
+    private ThreadFactory mFactory = r -> new Thread(r,"Crawler thread - " + atomicInteger.getAndIncrement());
     ExecutorService mDefaultPool = new ThreadPoolExecutor(corePoolSize * 2, corePoolSize * 4 + 1,
             60L, TimeUnit.SECONDS, new LinkedBlockingDeque<>(100), mFactory);
 
@@ -91,16 +89,7 @@ public class DispatcherImpl implements Dispatcher {
                     atomicLong.incrementAndGet();
                     // add task into threads pool
                     // async
-//                    mDefaultPool.execute(new Runnable() {
-//                        @Override
-//                        public void run() {
-//                            // async
-//                            downloader.handle(url);
-//                            // finish
-//                            atomicLong.decrementAndGet();
-//                        }
-//                    });
-                    new Thread(new Runnable() {
+                    mDefaultPool.execute(new Runnable() {
                         @Override
                         public void run() {
                             // async
@@ -108,7 +97,7 @@ public class DispatcherImpl implements Dispatcher {
                             // finish
                             atomicLong.decrementAndGet();
                         }
-                    }).start();
+                    });
                 } else {
                     // wait some seconds
                     try {

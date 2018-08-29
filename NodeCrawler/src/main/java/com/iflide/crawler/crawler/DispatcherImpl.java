@@ -84,7 +84,7 @@ public class DispatcherImpl implements Dispatcher {
                     Thread.sleep(5000);
                 }
                 // sync
-                String url = getUrl();
+                final String url = getUrl();
                 if (url != null) {
                     atomicLong.incrementAndGet();
                     // add task into threads pool

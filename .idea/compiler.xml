@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="masterCrawler" />
-        <module name="slaveCrawler" />
+        <module name="MasterCrawler" />
+        <module name="NodeCrawler" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="MasterCrawler" target="1.8" />
       <module name="masterCrawler" target="1.8" />
-      <module name="slaveCrawler" target="1.8" />
+      <module name="NodeCrawler" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

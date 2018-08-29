@@ -8,7 +8,7 @@
     <version>0.0.1-node</version>
     <packaging>jar</packaging>
 
-    <name>slaveCrawler</name>
+    <name>nodeCrawler</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>

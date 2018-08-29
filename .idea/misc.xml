@@ -8,6 +8,7 @@
       <list>
         <option value="$PROJECT_DIR$/IflideCrawler/pom.xml" />
         <option value="$PROJECT_DIR$/NodeCrawler/pom.xml" />
+        <option value="$PROJECT_DIR$/MasterCrawler/pom.xml" />
       </list>
     </option>
   </component>

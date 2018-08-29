@@ -41,7 +41,7 @@
 
 首先检测 URL 是否在去重队列，再次检测 URL 类型是否在放行队列，如果都不在，则放入 HashMap 进行累加，如果发现某一类型的数据条目 > threshold_3，则计算个数，符合条件就放它放入放行队列，不符合的话就放入过滤队列
 
-实现： Bloomfilter + MQ (负载均衡)
+实现： BloomFilter + MQ (负载均衡)
 
 
 
@@ -66,19 +66,14 @@ HOST: ip:port
 
 返回：页面 html
 
-**工具**：`OkHttp3` + `webClient`
-
-#### Page Classifier
-
-判断一个页面的类型，最好能自动识别是否是 AJAX 网页，然后分不同策略进行下载
-
+**工具**：`HtmlUnit`
 
 
 ### Extractor
 
 内容提取器，提取中文，外链等内容，去除图片等不相关数据
 
-- **工具**：`jsoup`
+- **工具**：`Jsoup`
 
 
 
@@ -247,3 +242,6 @@ while true;do
 done
 ```
 
+### TODO
+#### Page Classifier
+判断一个页面的类型，最好能自动识别是否是 AJAX 网页，然后分不同策略进行下载

@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UrlController {
     private Logger logger = LoggerFactory.getLogger(this.getClass().getSimpleName());
-    private static final Long EXPIRES_MILLISECOND = 1000L;
+    private static final Long EXPIRES_MILLISECOND = 5000L;
     private static final int FOLLOWUP_TIME = 5;
 
     @Autowired

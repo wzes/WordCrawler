@@ -63,7 +63,6 @@ public class UrlPoolService {
             for (int i = 0; i < RedisConsts.CRAWLER_QUEUES.length; i++) {
                 Long size = redisTemplate.opsForList().size(RedisConsts.CRAWLER_QUEUES[i]);
                 queueInfoMap.put(i, size);
-                logger.info("Queue: " + size);
             }
             init = false;
         }

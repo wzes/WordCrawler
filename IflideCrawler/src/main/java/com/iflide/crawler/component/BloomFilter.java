@@ -48,7 +48,7 @@ public class BloomFilter<E> {
     }
 
     public BloomFilter() {
-        this(0.0001, 600000);
+        this(0.0001, 60000000);
     }
 
     /**

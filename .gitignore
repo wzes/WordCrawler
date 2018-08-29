@@ -4,9 +4,3 @@ IflideCrawler/src/main/resources/static/
 IflideCrawler/src/main/resources/templates/
 NodeCrawler/data/
 data/
-MasterCrawler/.gitignore
-MasterCrawler/.mvn/
-MasterCrawler/mvnw
-MasterCrawler/mvnw.cmd
-MasterCrawler/pom.xml
-MasterCrawler/src/

@@ -61,8 +61,8 @@ public class PagePipeline extends Pipeline {
             Map<String, Integer> wordMap = wordSplitter.handle(url.getContent());
             for (Map.Entry<String, Integer> entry : wordMap.entrySet()) {
                 if (StringUtils.isChinese(entry.getKey())) {
-                    writer.write(String.format("%s %s %s %s\n", entry.getKey(),
-                            entry.getValue(), url.getName(), System.currentTimeMillis()));
+                    writer.write(String.format("%s %s\n", entry.getKey(),
+                            entry.getValue()));
                 }
             }
         } catch (IOException e) {

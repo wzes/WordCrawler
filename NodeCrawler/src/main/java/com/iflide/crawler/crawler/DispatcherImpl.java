@@ -51,6 +51,9 @@ public class DispatcherImpl implements Dispatcher {
     @Autowired
     Downloader downloader;
 
+    @Autowired
+    TaskManager taskManager;
+
     private volatile boolean flag = true;
     private int corePoolSize = Runtime.getRuntime().availableProcessors() == 0 ? 3 : Runtime.getRuntime().availableProcessors();
     private AtomicInteger atomicInteger = new AtomicInteger();
@@ -89,15 +92,14 @@ public class DispatcherImpl implements Dispatcher {
                     atomicLong.incrementAndGet();
                     // add task into threads pool
                     // async
-                    mDefaultPool.execute(new Runnable() {
-                        @Override
-                        public void run() {
-                            // async
-                            downloader.handle(url);
-                            // finish
-                            atomicLong.decrementAndGet();
-                        }
-                    });
+                    Future<?> task = mDefaultPool.submit(new Task(() -> {
+                        // async
+                        downloader.handle(url);
+                        // finish
+                        atomicLong.decrementAndGet();
+                    }, url));
+                    // add task
+                    taskManager.addTask(task);
                 } else {
                     // wait some seconds
                     try {

@@ -241,7 +241,14 @@ while true;do
     esac
 done
 ```
+### Statistic
+```
+find -name "*.txt"  | xargs cat | awk '{count[$1] += $2}END{printf("%s %s\n","Word","Count");for (ind in count){ printf("%s %d\n",ind,count[ind]);}}' | sort -t ' ' -rk 2n
+```
+
 
 ### TODO
 #### Page Classifier
 判断一个页面的类型，最好能自动识别是否是 AJAX 网页，然后分不同策略进行下载
+
+

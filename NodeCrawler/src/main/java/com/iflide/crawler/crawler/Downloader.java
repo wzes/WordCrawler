@@ -33,7 +33,7 @@ public class Downloader {
             logger.info("Start crawl: " + url);
             WebClient webClient = getHtmlUnitSpider();
             HtmlPage page = webClient.getPage(url);
-            webClient.waitForBackgroundJavaScript(15000);
+            webClient.waitForBackgroundJavaScript(5000);
             pagePipeline.save(extractor.getAllLinks(url, page.asXml()));
             pagePipeline.save(extractor.getText(url, page.asText()));
             logger.info("End crawl: " + url);
@@ -46,7 +46,7 @@ public class Downloader {
         // new webclient and initialize configure
         WebClient webClient = new WebClient(BrowserVersion.CHROME);
         webClient.getOptions().setJavaScriptEnabled(true);
-        webClient.getOptions().setCssEnabled(true);
+        webClient.getOptions().setCssEnabled(false);
         webClient.getOptions().setTimeout(35000);
         webClient.setAjaxController(new NicelyResynchronizingAjaxController());
         webClient.addRequestHeader("User-Agent",UserAgentUtils.getOneRandom());

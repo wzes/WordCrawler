@@ -28,13 +28,13 @@ public class DispatcherImpl implements Dispatcher {
      * <p>The threshold of waiting time for URL is null</p>
      *
      */
-    private static final Long EXPIRES_MILLISECOND = 1000L;
+    private static final Long EXPIRES_MILLISECOND = 10000L;
 
     /**
      * <p>A threshold for performing tasks at the same time.</p>
      *
      */
-    private static final Long DOWN_LOAD_THRESHOLD = 10L;
+    private static final Long DOWN_LOAD_THRESHOLD = 5L;
 
     /**
      * <p>Use locks to ensure that the number of tasks is within a certain range.</p>
@@ -55,7 +55,7 @@ public class DispatcherImpl implements Dispatcher {
     private int corePoolSize = Runtime.getRuntime().availableProcessors() == 0 ? 3 : Runtime.getRuntime().availableProcessors();
     private AtomicInteger atomicInteger = new AtomicInteger();
     private ThreadFactory mFactory = r -> new Thread(r,"Crawler thread - " + atomicInteger.getAndIncrement());
-    ExecutorService mDefaultPool = new ThreadPoolExecutor(corePoolSize * 2, corePoolSize * 4 + 1,
+    ExecutorService mDefaultPool = new ThreadPoolExecutor(corePoolSize, corePoolSize * 4 + 1,
             60L, TimeUnit.SECONDS, new LinkedBlockingDeque<>(100), mFactory);
 
     /**
@@ -81,7 +81,7 @@ public class DispatcherImpl implements Dispatcher {
         while (flag) {
             try {
                 while (atomicLong.get() > DOWN_LOAD_THRESHOLD) {
-                    Thread.sleep(5000);
+                    Thread.sleep(EXPIRES_MILLISECOND);
                 }
                 // sync
                 final String url = getUrl();

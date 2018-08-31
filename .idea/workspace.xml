@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82e3db10-ec15-4c2b-a4df-261b7a72c174" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/IflideCrawler/target/" />
     <ignored path="$PROJECT_DIR$/NodeCrawler/target/" />
@@ -86,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/TaskManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#600#601#0" expanded="true" />
@@ -281,7 +278,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -627,7 +624,7 @@
       <workItem from="1535515034957" duration="8703000" />
       <workItem from="1535548304811" duration="904000" />
       <workItem from="1535615013110" duration="9043000" />
-      <workItem from="1535678536994" duration="8619000" />
+      <workItem from="1535678536994" duration="9313000" />
     </task>
     <servers />
   </component>
@@ -664,7 +661,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73714000" />
+    <option name="totallyTimeSpent" value="74408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1026" extended-state="6" />
@@ -1104,7 +1101,7 @@
     <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/TaskManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />

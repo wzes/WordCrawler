@@ -181,13 +181,13 @@ start() {
 	echo "the nums of node is $1"
     num=$1
 	# start service
-	nohup java -jar crawler-0.0.1-service.jar &
+	nohup java -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=128m -Xms1024m -Xmx1024m -Xmn256m -Xss256k -XX:SurvivorRatio=8 -XX:+UseConcMarkSweepGC -jar crawler-0.0.1-service.jar &
 
 	sleep 10s
 	# start node
 	for i in $(seq 1 $num)  
 	do   
-		nohup java -jar crawler-0.0.1-node.jar --server.port=808$i &
+		nohup java -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=128m -Xms1024m -Xmx1024m -Xmn256m -Xss256k -XX:SurvivorRatio=8 -XX:+UseConcMarkSweepGC -jar crawler-0.0.1-node.jar --server.port=808$i &
 	done
 }
 

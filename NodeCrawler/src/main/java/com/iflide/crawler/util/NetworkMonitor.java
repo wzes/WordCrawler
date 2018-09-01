@@ -12,7 +12,7 @@ import java.util.Enumeration;
 
 public class NetworkMonitor implements Runnable {
     private String m_strUrl = "123.125.115.110";
-    private volatile boolean m_bNetworkAvailable = false;
+    private volatile boolean m_bNetworkAvailable = true;
 
     /**
      *

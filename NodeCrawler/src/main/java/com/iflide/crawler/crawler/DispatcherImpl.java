@@ -53,7 +53,7 @@ public class DispatcherImpl implements Dispatcher {
     @Autowired
     TaskManager taskManager;
 
-    NetworkMonitor networkMonitor = new NetworkMonitor();
+    private NetworkMonitor networkMonitor = new NetworkMonitor();
 
     private volatile boolean flag = true;
     private int corePoolSize = Runtime.getRuntime().availableProcessors() == 0 ? 3 : Runtime.getRuntime().availableProcessors();

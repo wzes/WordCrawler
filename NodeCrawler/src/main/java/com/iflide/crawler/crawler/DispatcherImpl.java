@@ -1,5 +1,6 @@
 package com.iflide.crawler.crawler;
 
+import com.iflide.crawler.util.NetworkMonitor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,6 +53,8 @@ public class DispatcherImpl implements Dispatcher {
     @Autowired
     TaskManager taskManager;
 
+    NetworkMonitor networkMonitor = new NetworkMonitor();
+
     private volatile boolean flag = true;
     private int corePoolSize = Runtime.getRuntime().availableProcessors() == 0 ? 3 : Runtime.getRuntime().availableProcessors();
     private AtomicInteger atomicInteger = new AtomicInteger();
@@ -78,10 +81,11 @@ public class DispatcherImpl implements Dispatcher {
     public void run() {
         flag = true;
         logger.info("Run: ");
+        new Thread(networkMonitor).start();
         // exit loop
         while (flag) {
             try {
-                while (atomicLong.get() > DOWN_LOAD_THRESHOLD) {
+                while (atomicLong.get() > DOWN_LOAD_THRESHOLD || !networkMonitor.isNetworkAvailable()) {
                     Thread.sleep(EXPIRES_MILLISECOND);
                 }
                 // sync

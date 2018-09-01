@@ -4,6 +4,7 @@ import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.iflide.crawler.model.Url;
 import com.iflide.crawler.util.UserAgentUtils;
 import okhttp3.*;
 import org.jsoup.Jsoup;
@@ -49,6 +50,8 @@ public class Downloader {
             okHttpClient.newCall(request).enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
+                    // retry
+                    //  pagePipeline.retry(new Url(url));
                     logger.info("Failure crawl: " + url);
                     atomicLong.decrementAndGet();
                 }

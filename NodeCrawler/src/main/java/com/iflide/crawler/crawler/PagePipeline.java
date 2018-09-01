@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -37,6 +38,10 @@ public class PagePipeline extends Pipeline {
         crawlerSender.send(urls);
     }
 
+    public void retry(Url url) {
+        crawlerSender.send(Arrays.asList(url));
+    }
+
     /**
      * @param url url
      */
@@ -45,7 +50,9 @@ public class PagePipeline extends Pipeline {
         // send url info to service center
         crawlerSender.send(new Url(url.getName(), url.getContent().length()));
         logger.info("Send url: " + url.getName());
-
+        if (url.getContent().length() == 0) {
+            return;
+        }
         // ensure file exist or create
         String domainName = UrlHelper.getDomainName(url.getName());
         File file = new File(DIR_NAME + domainName);

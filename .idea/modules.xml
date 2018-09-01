@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Crawler.iml" filepath="$PROJECT_DIR$/.idea/Crawler.iml" />
       <module fileurl="file://$PROJECT_DIR$/MasterCrawler/MasterCrawler.iml" filepath="$PROJECT_DIR$/MasterCrawler/MasterCrawler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/NodeCrawler/slaveCrawler.iml" filepath="$PROJECT_DIR$/NodeCrawler/slaveCrawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NodeCrawler/NodeCrawler.iml" filepath="$PROJECT_DIR$/NodeCrawler/NodeCrawler.iml" />
     </modules>
   </component>
 </project>

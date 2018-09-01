@@ -24,15 +24,25 @@ public class BloomFilter<E> {
     @Value("${bloomfilter.expireDays}")
     private long expireDays;
 
-    // total length of the Bloom filter
+    /**
+     * total length of the Bloom filter
+     */
     private int sizeOfBloomFilter;
-    // expected (maximum) number of elements to be added
+    /**
+     * expected (maximum) number of elements to be added
+     */
     private int expectedNumberOfFilterElements;
-    // number of hash functions
+    /**
+     * number of hash functions
+     */
     private int numberOfHashFunctions;
-    // encoding used for storing hash values as strings
+    /**
+     * encoding used for storing hash values as strings
+     */
     private final Charset charset = Charset.forName("UTF-8");
-    // MD5 gives good enough accuracy in most circumstances. Change to SHA1 if it's needed
+    /**
+     * MD5 gives good enough accuracy in most circumstances. Change to SHA1 if it's needed
+     */
     private static final String hashName = "MD5";
     private static final MessageDigest digestFunction;
 

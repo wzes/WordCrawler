@@ -9,6 +9,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Component;
 
+import javax.print.Doc;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +29,7 @@ public class Extractor {
      * @param doc
      * @return url List
      */
-    private List<Url> getAllLinks(String url, Document doc) {
+    public List<Url> getAllLinks(String url, Document doc) {
         List<Url> urls = new ArrayList<>();
         Elements links = doc.select("a[href]");
         for (Element link : links) {
@@ -45,10 +46,19 @@ public class Extractor {
      * <p>Get content</p>
      *
      * @param url
-     * @param content
+     * @param html
      * @return
      */
-    Url getText(String url, String content) {
-        return new Url(url, content);
+    Url getText(String url, String html) {
+        return getText(url, Jsoup.parse(html));
+    }
+
+    public Url getText(String url, Document document) {
+        Elements ps = document.getElementsByTag("p");
+        StringBuilder sb = new StringBuilder();
+        for (Element e : ps) {
+            sb.append(e.text()).append("\n");
+        }
+        return new Url(url, sb.toString());
     }
 }

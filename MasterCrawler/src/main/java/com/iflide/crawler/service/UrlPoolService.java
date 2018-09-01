@@ -59,7 +59,7 @@ public class UrlPoolService {
      */
     public String popUrl() {
         if (init) {
-            queueInfoMap = new HashMap<>();
+            queueInfoMap = new HashMap<>(RedisConsts.CRAWLER_QUEUES.length);
             for (int i = 0; i < RedisConsts.CRAWLER_QUEUES.length; i++) {
                 Long size = redisTemplate.opsForList().size(RedisConsts.CRAWLER_QUEUES[i]);
                 queueInfoMap.put(i, size);

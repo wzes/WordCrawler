@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 import static org.junit.Assert.*;
 
 /**
@@ -34,7 +36,7 @@ public class DispatcherImplTest {
 
     @Test
     public void run() {
-        downloader.handle("http://www.xinhuanet.com/politics/xxjxs/#index_1");
+        downloader.handle("http://www.xinhuanet.com/politics/xxjxs/#index_1", new AtomicLong());
     }
 
     @Test

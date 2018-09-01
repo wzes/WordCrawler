@@ -12,8 +12,6 @@ import org.springframework.web.client.RestTemplate;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author Create by xuantang
@@ -28,13 +26,13 @@ public class DispatcherImpl implements Dispatcher {
      * <p>The threshold of waiting time for URL is null</p>
      *
      */
-    private static final Long EXPIRES_MILLISECOND = 10000L;
+    private static final Long EXPIRES_MILLISECOND = 2000L;
 
     /**
      * <p>A threshold for performing tasks at the same time.</p>
      *
      */
-    private static final Long DOWN_LOAD_THRESHOLD = 5L;
+    private static final Long DOWN_LOAD_THRESHOLD = 20L;
 
     /**
      * <p>Use locks to ensure that the number of tasks is within a certain range.</p>
@@ -92,14 +90,7 @@ public class DispatcherImpl implements Dispatcher {
                     atomicLong.incrementAndGet();
                     // add task into threads pool
                     // async
-                    Future<?> task = mDefaultPool.submit(new Task(() -> {
-                        // async
-                        downloader.handle(url);
-                        // finish
-                        atomicLong.decrementAndGet();
-                    }, url));
-                    // add task
-                    taskManager.addTask(task);
+                    downloader.handle(url, atomicLong);
                 } else {
                     // wait some seconds
                     try {

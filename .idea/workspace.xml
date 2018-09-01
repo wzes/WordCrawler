@@ -4,7 +4,9 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82e3db10-ec15-4c2b-a4df-261b7a72c174" name="Default" comment="" />
+    <list default="true" id="82e3db10-ec15-4c2b-a4df-261b7a72c174" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/IflideCrawler/target/" />
     <ignored path="$PROJECT_DIR$/NodeCrawler/target/" />
     <ignored path="$PROJECT_DIR$/MasterCrawler/target/" />
@@ -44,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetworkMonitor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NetworkMonitor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/util/NetworkMonitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state relative-caret-position="-115">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#595#596#0" expanded="true" />
@@ -56,6 +58,15 @@
                 <element signature="e#714#715#0" expanded="true" />
                 <element signature="e#756#757#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InetAddress.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///opt/jdk1.8.0_144/src.zip!/java/net/InetAddress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="1073" column="30" selection-start-line="1073" selection-start-column="30" selection-end-line="1073" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -84,11 +95,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="30931593.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/zswxy.cn/30931593.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="24790880.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/24790880.txt">
           <provider selected="true" editor-type-id="text-editor" />
@@ -99,11 +105,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="DispatcherImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DispatcherImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+            <state relative-caret-position="213">
+              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1340#1363#1" expanded="true" />
@@ -124,7 +130,7 @@
       <file leaf-file-name="Downloader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="1035">
               <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
             </state>
           </provider>
@@ -221,8 +227,8 @@
         <option value="$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/crawler/DispatcherImplTest.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java" />
-        <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/util/NetworkMonitor.java" />
+        <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" />
       </list>
     </option>
   </component>
@@ -668,7 +674,7 @@
       <workItem from="1535615013110" duration="9043000" />
       <workItem from="1535678536994" duration="10431000" />
       <workItem from="1535764843386" duration="3053000" />
-      <workItem from="1535767925522" duration="10174000" />
+      <workItem from="1535767925522" duration="10557000" />
     </task>
     <servers />
   </component>
@@ -705,7 +711,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88753000" />
+    <option name="totallyTimeSpent" value="89136000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -718,9 +724,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50160426" side_tool="true" visible="true" weight="0.17790698" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005348" side_tool="true" weight="0.3906977" />
       <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.15721925" />
       <window_info anchor="bottom" id="Database Changes" order="18" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -739,7 +746,7 @@
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32969433" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Run Dashboard" order="17" weight="0.3906977" />
+      <window_info anchor="bottom" id="Run Dashboard" order="17" sideWeight="0.49946523" weight="0.3906977" />
       <window_info anchor="bottom" id="REST Client" order="0" weight="0.40813953" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32906976" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49893048" weight="0.37209302" />
@@ -776,9 +783,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/cctv.com/7458407.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar:///opt/jdk1.8.0_144/src.zip!/java/util/concurrent/Future.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1978">
@@ -1104,13 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -1136,27 +1133,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java">
+    <entry file="jar:///opt/jdk1.8.0_144/src.zip!/java/net/InetAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1340#1363#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="1073" column="30" selection-start-line="1073" selection-start-column="30" selection-end-line="1073" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/util/NetworkMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        <state relative-caret-position="-115">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#595#596#0" expanded="true" />
             <element signature="e#633#634#0" expanded="true" />
             <element signature="e#714#715#0" expanded="true" />
             <element signature="e#756#757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1340#1363#1" expanded="true" />
           </folding>
         </state>
       </provider>

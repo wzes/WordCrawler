@@ -85,7 +85,7 @@ public class DispatcherImpl implements Dispatcher {
         // exit loop
         while (flag) {
             try {
-                while (atomicLong.get() > DOWN_LOAD_THRESHOLD || !networkMonitor.isNetworkAvailable()) {
+                while (atomicLong.get() > DOWN_LOAD_THRESHOLD) {
                     Thread.sleep(EXPIRES_MILLISECOND);
                 }
                 // sync

@@ -66,6 +66,7 @@ public class Downloader {
                 }
             });
         } catch (Exception e) {
+            atomicLong.decrementAndGet();
             logger.error("Error: " + e.getMessage());
         }
     }

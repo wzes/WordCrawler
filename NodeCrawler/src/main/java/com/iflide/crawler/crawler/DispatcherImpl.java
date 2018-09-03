@@ -27,7 +27,7 @@ public class DispatcherImpl implements Dispatcher {
      * <p>The threshold of waiting time for URL is null</p>
      *
      */
-    private static final Long EXPIRES_MILLISECOND = 2000L;
+    private static final Long EXPIRES_MILLISECOND = 10000L;
 
     /**
      * <p>A threshold for performing tasks at the same time.</p>
@@ -84,6 +84,8 @@ public class DispatcherImpl implements Dispatcher {
             try {
                 while (atomicLong.get() > DOWN_LOAD_THRESHOLD) {
                     Thread.sleep(EXPIRES_MILLISECOND);
+                    // for error
+                    atomicInteger.decrementAndGet();
                 }
                 // sync
                 final String url = getUrl();

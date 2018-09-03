@@ -84,8 +84,7 @@ public class BloomFilter<E> {
      */
     public BloomFilter(double falsePositiveProbability, int expectedNumberOfElements) {
         this((int) Math.ceil((int) Math.ceil(-(Math.log(falsePositiveProbability) / Math.log(2))) * expectedNumberOfElements / Math.log(2)), // m = ceil(kn/ln2)
-                expectedNumberOfElements,
-                (int) Math.ceil(-(Math.log(falsePositiveProbability) / Math.log(2)))); // k = ceil(-ln(f)/ln2)
+                expectedNumberOfElements, (int) Math.ceil(-(Math.log(falsePositiveProbability) / Math.log(2)))); // k = ceil(-ln(f)/ln2)
     }
 
     /**
@@ -104,7 +103,6 @@ public class BloomFilter<E> {
      * @param bytes array of bytes to add to the Bloom filter.
      */
     public void add(String key, byte[] bytes) {
-        redisTemplate.opsForValue().get(key);
         int[] hashes = createHashes(bytes, numberOfHashFunctions);
         for (int hash : hashes) {
             redisTemplate.opsForValue().setBit(key, Math.abs(hash % sizeOfBloomFilter), true);

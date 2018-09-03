@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82e3db10-ec15-4c2b-a4df-261b7a72c174" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" afterDir="false" />
     </list>
@@ -74,11 +73,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="DispatcherImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DispatcherImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+            <state relative-caret-position="271">
+              <caret line="93" column="34" lean-forward="true" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Downloader.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Downloader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-405">
-              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+            <state relative-caret-position="345">
+              <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -203,8 +202,8 @@
         <option value="$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/component/BloomFilter.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" />
+        <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" />
       </list>
     </option>
   </component>
@@ -745,7 +744,7 @@
       <workItem from="1535678536994" duration="10431000" />
       <workItem from="1535764843386" duration="3053000" />
       <workItem from="1535767925522" duration="10853000" />
-      <workItem from="1535869983751" duration="8994000" />
+      <workItem from="1535869983751" duration="9202000" />
     </task>
     <servers />
   </component>
@@ -782,7 +781,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98426000" />
+    <option name="totallyTimeSpent" value="98634000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -821,8 +820,8 @@
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32906976" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49893048" weight="0.37209302" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32969433" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4983957" visible="true" weight="0.3872093" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22139038" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.4983957" visible="true" weight="0.3872093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22139038" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32994652" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="JProfiler" order="1" />
@@ -1163,20 +1162,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+        <state relative-caret-position="271">
+          <caret line="93" column="34" lean-forward="true" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
         </state>
       </provider>
     </entry>

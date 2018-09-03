@@ -84,8 +84,6 @@ public class DispatcherImpl implements Dispatcher {
             try {
                 while (atomicLong.get() > DOWN_LOAD_THRESHOLD) {
                     Thread.sleep(EXPIRES_MILLISECOND);
-                    // for error
-                    atomicInteger.decrementAndGet();
                 }
                 // sync
                 final String url = getUrl();
@@ -103,7 +101,7 @@ public class DispatcherImpl implements Dispatcher {
                     }
                 }
             } catch (Exception e) {
-                logger.info("Error: " + e.getMessage());
+                logger.info("Exception: " + e.getMessage());
             }
         }
     }

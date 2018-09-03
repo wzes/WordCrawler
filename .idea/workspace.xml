@@ -4,14 +4,7 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82e3db10-ec15-4c2b-a4df-261b7a72c174" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/crawler/ExtractorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="82e3db10-ec15-4c2b-a4df-261b7a72c174" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/IflideCrawler/target/" />
     <ignored path="$PROJECT_DIR$/NodeCrawler/target/" />
     <ignored path="$PROJECT_DIR$/MasterCrawler/target/" />
@@ -38,103 +31,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PagePipeline.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java">
+      <file leaf-file-name="23183555.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/jianshu.com/23183555.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="25028997.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/jianshu.com/25028997.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="30373993.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/jianshu.com/30373993.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="29684788.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/jianshu.com/29684788.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="2238216.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/jianshu.com/2238216.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-            </state>
+            <state relative-caret-position="-1035" />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrawlerApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/CrawlerApplication.java">
+      <file leaf-file-name="3246279.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/jianshu.com/3246279.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="4477040.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/jianshu.com/4477040.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
+            <state relative-caret-position="-4968" />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlUploadReceiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlUploadReceiver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-            </state>
-          </provider>
+      <file leaf-file-name="7245270.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/jianshu.com/7245270.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="DispatcherImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="5986846.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/jianshu.com/5986846.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="CleanerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/CleanerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Downloader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Extractor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-              <folding>
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1191#1192#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExtractorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/crawler/ExtractorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrawlerApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/CrawlerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrlWordCountReceiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlWordCountReceiver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-            </state>
-          </provider>
+      <file leaf-file-name="25400611.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/jianshu.com/25400611.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -226,10 +174,10 @@
         <option value="$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/component/BloomFilter.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/crawler/ExtractorTest.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java" />
+        <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" />
       </list>
     </option>
   </component>
@@ -739,7 +687,7 @@
       <workItem from="1535678536994" duration="10431000" />
       <workItem from="1535764843386" duration="3053000" />
       <workItem from="1535767925522" duration="10853000" />
-      <workItem from="1535869983751" duration="16358000" />
+      <workItem from="1535869983751" duration="16675000" />
     </task>
     <servers />
   </component>
@@ -776,7 +724,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105790000" />
+    <option name="totallyTimeSpent" value="106107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -810,11 +758,11 @@
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32969433" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="17" sideWeight="0.49946523" visible="true" weight="0.3906977" />
+      <window_info anchor="bottom" id="Run Dashboard" order="17" sideWeight="0.49946523" weight="0.3906977" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32906976" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49893048" weight="0.37209302" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32969433" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4983957" weight="0.3872093" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.4983957" visible="true" weight="0.3872093" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22139038" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32994652" />
       <window_info id="Web" order="6" side_tool="true" />
@@ -847,35 +795,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/zhihuishu.com/5759216.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1286" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/yododo.cn/22608341.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8209" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/591hx.com/24021300.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/baidu.com/1741487.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/china.com/8207593.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/china.com/21738998.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/3news.com.cn/27572248.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1415" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/3news.com.cn/28009995.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -987,22 +906,11 @@
     <entry file="file://$PROJECT_DIR$/data/jianshu.com/13799784.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/jianshu.com/23183555.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/jianshu.com/25400611.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/jianshu.com/12792248.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/jianshu.com/10858572.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/jianshu.com/2238216.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3036" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/github.com/4991734.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1064,13 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/crawler/ExtractorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1085,10 +986,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
+    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+        <state relative-caret-position="-190">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
@@ -1103,6 +1004,47 @@
             <element signature="e#1245#1246#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="61" column="62" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/23183555.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/25400611.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/29684788.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/5986846.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/30373993.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/3246279.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/4477040.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4968" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/7245270.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/25028997.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/2238216.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1035" />
       </provider>
     </entry>
   </component>

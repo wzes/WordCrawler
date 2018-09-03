@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author Create by xuantang
@@ -34,8 +35,10 @@ public class PagePipeline extends Pipeline {
      */
     @Override
     public void save(List<Url> urls) {
+        List<Url> collect = urls.stream().filter(url -> url.getName().startsWith("https://www.jianshu.com")).collect(Collectors.toList());
+        logger.info("Collect: " + collect.size());
         // send url info to service center
-        crawlerSender.send(urls);
+        crawlerSender.send(collect);
     }
 
     public void retry(Url url) {
@@ -63,16 +66,16 @@ public class PagePipeline extends Pipeline {
         // write content
         String filename = DIR_NAME + domainName + "/" + url.hashCode() + ".txt";
         try (FileWriter writer = new FileWriter(new File(filename))) {
-            writer.write(url.getContent());
-//            WordSplitter wordSplitter = new WordSplitter();
-//            logger.info("Word splitter: " + url.getName() + " Size: " + url.getContent().length());
-//            Map<String, Integer> wordMap = wordSplitter.handle(url.getContent());
-//            for (Map.Entry<String, Integer> entry : wordMap.entrySet()) {
-//                if (StringUtils.isChinese(entry.getKey())) {
-//                    writer.write(String.format("%s %s\n", entry.getKey(),
-//                            entry.getValue()));
-//                }
-//            }
+            // writer.write(url.getContent());
+            WordSplitter wordSplitter = new WordSplitter();
+            logger.info("Word splitter: " + url.getName() + " Size: " + url.getContent().length());
+            Map<String, Integer> wordMap = wordSplitter.handle(url.getContent());
+            for (Map.Entry<String, Integer> entry : wordMap.entrySet()) {
+                if (StringUtils.isChinese(entry.getKey())) {
+                    writer.write(String.format("%s %s\n", entry.getKey(),
+                            entry.getValue()));
+                }
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

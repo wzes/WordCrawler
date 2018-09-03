@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82e3db10-ec15-4c2b-a4df-261b7a72c174" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/crawler/ExtractorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeCrawler/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/NodeCrawler/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/IflideCrawler/target/" />
     <ignored path="$PROJECT_DIR$/NodeCrawler/target/" />
@@ -36,52 +41,28 @@
       <file leaf-file-name="PagePipeline.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
-              <folding>
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="293">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CleanerService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/CleanerService.java">
+      <file leaf-file-name="CrawlerApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/CrawlerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+            <state relative-caret-position="115">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlPoolService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlPoolService.java">
+      <file leaf-file-name="UrlUploadReceiver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlUploadReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-              <folding>
-                <element signature="e#2654#2655#0" expanded="true" />
-                <element signature="e#2718#2719#0" expanded="true" />
-                <element signature="e#2756#2757#0" expanded="true" />
-                <element signature="e#2818#2819#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="259">
+              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="19493417.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/tuer123.com/19493417.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="DispatcherImpl.java" pinned="false" current-in-tab="false">
@@ -96,30 +77,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="4163669.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/weatherlive.com.cn/4163669.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="5465576.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/yaosai.com/5465576.txt">
+      <file leaf-file-name="CleanerService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/CleanerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1079" />
+            <state relative-caret-position="103">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Downloader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+            <state relative-caret-position="248">
+              <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="15473602.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/yujianhenan.com.cn/15473602.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="Extractor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+              <folding>
+                <element signature="e#988#989#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="e#1191#1192#0" expanded="true" />
+                <element signature="e#1245#1246#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtractorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/crawler/ExtractorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrawlerApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/CrawlerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrlWordCountReceiver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlWordCountReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -127,8 +142,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -164,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/IflideCrawler/src/main/java/com/iflide/crawler/component/RedisService.java" />
         <option value="$PROJECT_DIR$/IflideCrawler/src/main/java/com/iflide/crawler/service/UrlUploadReceiver.java" />
         <option value="$PROJECT_DIR$/IflideCrawler/src/main/java/com/iflide/crawler/service/UrlWordCountReceiver.java" />
         <option value="$PROJECT_DIR$/IflideCrawler/src/main/java/com/iflide/crawler/component/UrlPoolService.java" />
@@ -205,16 +219,17 @@
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/TaskManager.java" />
         <option value="$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlPoolService.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/word/WordSplitterTest.java" />
-        <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/crawler/DispatcherImplTest.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/util/NetworkMonitor.java" />
         <option value="$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlUploadReceiver.java" />
         <option value="$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlWordCountReceiver.java" />
         <option value="$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/component/BloomFilter.java" />
-        <option value="$PROJECT_DIR$/NodeCrawler/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/DispatcherImpl.java" />
+        <option value="$PROJECT_DIR$/NodeCrawler/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java" />
         <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java" />
+        <option value="$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/crawler/ExtractorTest.java" />
+        <option value="$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java" />
       </list>
     </option>
   </component>
@@ -256,7 +271,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -277,6 +292,11 @@
             <path>
               <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="Crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
               <item name="MasterCrawler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -308,46 +328,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="MasterCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="MasterCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="MasterCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="MasterCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
@@ -403,46 +383,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="crawler" type="462c0819:PsiDirectoryNode" />
               <item name="crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="NodeCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="NodeCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="NodeCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="NodeCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="word" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
@@ -451,6 +391,50 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="NodeCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="NodeCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="NodeCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="NodeCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="NodeCrawler" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Crawler" type="b2602c69:ProjectViewProjectNode" />
@@ -514,8 +498,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.iflide.crawler.word" />
       <recent name="com.iflide.crawler.crawler" />
+      <recent name="com.iflide.crawler.word" />
       <recent name="com.iflide.crawler.controller" />
       <recent name="com.iflide.crawler.service" />
     </key>
@@ -553,12 +537,35 @@
     </option>
     <option name="contentProportion" value="0.16476347" />
   </component>
-  <component name="RunManager" selected="Spring Boot.CrawlerApplication_Node2">
+  <component name="RunManager" selected="JUnit.ExtractorTest.getAllLinks">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ExtractorTest.getAllLinks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NodeCrawler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iflide.crawler.crawler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.iflide.crawler.crawler" />
+      <option name="MAIN_CLASS_NAME" value="com.iflide.crawler.crawler.ExtractorTest" />
+      <option name="METHOD_NAME" value="getAllLinks" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="UrlHelperTest.getUrlTypeException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="masterCrawler" />
@@ -573,29 +580,6 @@
       <option name="PACKAGE_NAME" value="com.iflide.crawler.service" />
       <option name="MAIN_CLASS_NAME" value="com.iflide.crawler.service.UrlHelperTest" />
       <option name="METHOD_NAME" value="getUrlTypeException" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="UrlHelperTest.getUrlTypeTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="masterCrawler" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.iflide.crawler.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.iflide.crawler.service" />
-      <option name="MAIN_CLASS_NAME" value="com.iflide.crawler.service.UrlHelperTest" />
-      <option name="METHOD_NAME" value="getUrlTypeTrue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -717,19 +701,19 @@
     <list>
       <item itemvalue="Spring Boot.CrawlerApplication_Node2" />
       <item itemvalue="Spring Boot.CrawlerApplication_Node3" />
-      <item itemvalue="JUnit.UrlHelperTest.getUrlTypeTrue" />
       <item itemvalue="JUnit.UrlHelperTest.getUrlTypeException" />
       <item itemvalue="JUnit.WordSplitterTest.handle" />
       <item itemvalue="JUnit.WordSplitterTest" />
       <item itemvalue="Spring Boot.CrawlerApplication" />
+      <item itemvalue="JUnit.ExtractorTest.getAllLinks" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CrawlerApplication" />
+        <item itemvalue="JUnit.ExtractorTest.getAllLinks" />
         <item itemvalue="JUnit.WordSplitterTest.handle" />
         <item itemvalue="JUnit.WordSplitterTest" />
         <item itemvalue="JUnit.UrlHelperTest.getUrlTypeException" />
-        <item itemvalue="JUnit.UrlHelperTest.getUrlTypeTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -755,23 +739,11 @@
       <workItem from="1535678536994" duration="10431000" />
       <workItem from="1535764843386" duration="3053000" />
       <workItem from="1535767925522" duration="10853000" />
-      <workItem from="1535869983751" duration="13395000" />
+      <workItem from="1535869983751" duration="16358000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WordSplitterTest_handle - 2018.08.29 at 15h 26m 28s.xml">
-      <configuration name="WordSplitterTest.handle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WordSplitterTest - 2018.08.30 at 19h 22m 38s.xml">
-      <configuration name="WordSplitterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WordSplitterTest - 2018.08.30 at 19h 24m 33s.xml">
-      <configuration name="WordSplitterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WordSplitterTest - 2018.08.30 at 19h 31m 52s.xml">
-      <configuration name="WordSplitterTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WordSplitterTest - 2018.08.30 at 19h 32m 52s.xml">
       <configuration name="WordSplitterTest" configurationId="JUnit" />
     </history-entry>
@@ -790,9 +762,21 @@
     <history-entry file="WordSplitterTest_handle - 2018.09.01 at 10h 03m 08s.xml">
       <configuration name="WordSplitterTest.handle" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ExtractorTest_getAllLinks - 2018.09.03 at 21h 08m 44s.xml">
+      <configuration name="ExtractorTest.getAllLinks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExtractorTest_getAllLinks - 2018.09.03 at 21h 09m 07s.xml">
+      <configuration name="ExtractorTest.getAllLinks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExtractorTest_getAllLinks - 2018.09.03 at 21h 10m 20s.xml">
+      <configuration name="ExtractorTest.getAllLinks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExtractorTest_getAllLinks - 2018.09.03 at 21h 10m 54s.xml">
+      <configuration name="ExtractorTest.getAllLinks" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102827000" />
+    <option name="totallyTimeSpent" value="105790000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -804,8 +788,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1026" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1920" height="1026" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005348" side_tool="true" weight="0.3906977" />
@@ -827,12 +810,12 @@
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32969433" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Run Dashboard" order="17" sideWeight="0.49946523" weight="0.3906977" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="17" sideWeight="0.49946523" visible="true" weight="0.3906977" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32906976" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49893048" weight="0.37209302" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32969433" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4983957" visible="true" weight="0.3872093" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22139038" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4983957" weight="0.3872093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22139038" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32994652" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="JProfiler" order="1" />
@@ -856,7 +839,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="70" />
+      <option name="time" value="71" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -864,196 +847,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/util/UserAgentUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/util/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.0.5.RELEASE/spring-amqp-2.0.5.RELEASE-sources.jar!/org/springframework/amqp/core/AmqpTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/service/CrawlerSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/service/UrlHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/model/Url.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3-sources.jar!/org/jsoup/nodes/Element.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="602" column="20" selection-start-line="602" selection-start-column="20" selection-end-line="602" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-          <folding>
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1191#1192#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0-sources.jar!/okhttp3/Call.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/jdk1.8.0_144/src.zip!/java/util/concurrent/Executor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0-sources.jar!/okhttp3/RealCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0-sources.jar!/okhttp3/OkHttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="192" column="13" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0-sources.jar!/okhttp3/Dispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="210" column="3" selection-start-line="210" selection-start-column="3" selection-end-line="210" selection-end-column="3" />
-          <folding>
-            <element signature="e#8175#8176#0" expanded="true" />
-            <element signature="e#8242#8243#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Pipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/CrawlerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-897">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/config/RabbitConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlUploadReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlWordCountReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.9.RELEASE/spring-data-redis-2.0.9.RELEASE-sources.jar!/org/springframework/data/redis/core/ValueOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="189" column="12" selection-start-line="189" selection-start-column="12" selection-end-line="189" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/component/RedisConsts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/controller/UrlController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/component/BloomFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
-          <folding>
-            <element signature="e#3214#3215#0" expanded="true" />
-            <element signature="e#3276#3277#0" expanded="true" />
-            <element signature="e#4372#4373#0" expanded="true" />
-            <element signature="e#4446#4447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/word/WordSplitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/zhihuishu.com/5759216.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1286" />
@@ -1135,10 +928,129 @@
     <entry file="file://$PROJECT_DIR$/data/yujianhenan.com.cn/15473602.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-971">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/model/Url.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/500400.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/github.com/5659299.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/github.com/11118150.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/mozilla.org/21916217.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_144/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/controller/UrlController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Dispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/13799784.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/23183555.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/25400611.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/12792248.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/10858572.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/jianshu.com/2238216.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3036" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/github.com/4991734.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/github.com/13539344.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/github.com/19620319.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlPoolService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
+            <element signature="e#2654#2655#0" expanded="true" />
+            <element signature="e#2718#2719#0" expanded="true" />
+            <element signature="e#2756#2757#0" expanded="true" />
+            <element signature="e#2818#2819#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlWordCountReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlUploadReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/CleanerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/CrawlerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1152,41 +1064,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/PagePipeline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
-          <folding>
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="293">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/UrlPoolService.java">
+    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/test/java/com/iflide/crawler/crawler/ExtractorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="e#2654#2655#0" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2818#2819#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/service/CleanerService.java">
+    <entry file="file://$PROJECT_DIR$/MasterCrawler/src/main/java/com/iflide/crawler/CrawlerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+        <state relative-caret-position="207">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Downloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeCrawler/src/main/java/com/iflide/crawler/crawler/Extractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

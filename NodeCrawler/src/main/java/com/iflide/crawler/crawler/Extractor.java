@@ -2,6 +2,7 @@ package com.iflide.crawler.crawler;
 
 import com.iflide.crawler.model.Url;
 import com.iflide.crawler.util.StringUtils;
+import com.iflide.crawler.util.UrlHelper;
 import org.jsoup.Jsoup;
 import org.jsoup.helper.Validate;
 import org.jsoup.nodes.Document;
@@ -34,7 +35,11 @@ public class Extractor {
         doc.setBaseUri(url);
         Elements links = doc.select("a[href]");
         for (Element link : links) {
-            urls.add(new Url(link.attr("abs:href")));
+            String href = link.attr("abs:href");
+            String domainName = UrlHelper.getDomainName(url);
+            if (domainName != null && href.contains(domainName)) {
+                urls.add(new Url(href));
+            }
         }
         return urls;
     }

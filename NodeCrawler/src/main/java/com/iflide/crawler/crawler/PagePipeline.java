@@ -35,10 +35,8 @@ public class PagePipeline extends Pipeline {
      */
     @Override
     public void save(List<Url> urls) {
-        List<Url> collect = urls.stream().filter(url -> url.getName().startsWith("https://www.jianshu.com")).collect(Collectors.toList());
-        logger.info("Collect: " + collect.size());
         // send url info to service center
-        crawlerSender.send(collect);
+        crawlerSender.send(urls);
     }
 
     public void retry(Url url) {

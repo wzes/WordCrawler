@@ -6,6 +6,7 @@ import com.iflide.crawler.model.Url;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -42,7 +43,10 @@ public class CleanerService {
             if (urlType == null) {
                 continue;
             }
-            if (bloomFilter.contains(RedisConsts.FILTER_BLOOMFILTER, urlType)) {
+            if (bloomFilter.contains(RedisConsts.GO_BLOOMFILTER, urlType)) {
+                urlPoolService.addUrl(url.getName());
+                logger.info("Add go url: " + url.getName());
+            } else if (bloomFilter.contains(RedisConsts.FILTER_BLOOMFILTER, urlType)) {
                 logger.info("Filter url with url type: " + url.getName());
             }
             // not exist in crawler queue

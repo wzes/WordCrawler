@@ -55,11 +55,6 @@ public class Extractor {
     }
 
     public Url getText(String url, Document document) {
-        Elements ps = document.getElementsByTag("p");
-        StringBuilder sb = new StringBuilder();
-        for (Element e : ps) {
-            sb.append(e.text()).append("\n");
-        }
-        return new Url(url, sb.toString());
+        return new Url(url, document.text());
     }
 }
